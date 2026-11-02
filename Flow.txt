@@ -1,0 +1,35 @@
+routes -> controller -> validation and service -> Repository (with only DB logic)
+
+arrow functions in complete backend
+const greet = async(req,res) => {statements};
+
+Implementation modules
+All routes with middleware and jwt verification 
+User registration 
+User login 
+
+Registration:
+    first_name
+    last_name
+    Email
+    Mobile_num
+    password
+    Gender
+
+http://localhost:5000/api/auth/register
+
+{
+    "first_name":"prasad",
+    "last_name":"voleti",
+    "email":"prasadvoleti2222@gmail.com",
+    "password":"123456",
+    "mobile_num":"8688759373",
+    "gender":"male"
+}
+
+bcrypt.hash -> returns promise
+bcrypt.hashSync -> returns string
+bcrypt.compareSync -> plaintext and hashedtext
+
+
+
